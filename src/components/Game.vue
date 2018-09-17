@@ -1,16 +1,12 @@
 <template>
     <div class="row">
         <div class="col-md-2">
-             {{ $store.state.list.listToDo }}
-             {{ monsterHp }}
         </div>
         <div class="col-md-4">
             <h1 class="text-center">YOU</h1>
             <img src=".././assets/you.jpg" style="height:300px; width:300px;">
             <div class="hp">
-                <div class="hp text-center"  :style="{
-                    width: youHp + '%'
-                }">
+                <div class="hp text-center" :style="{width: youHp + '%'}">
                 </div>
                 {{ youHp }}
             </div>
@@ -19,9 +15,7 @@
             <h1 class="text-center">MONSTER</h1>
             <img src=".././assets/monster.jpg" style="height:300px; width:300px;">
             <div class="hp">
-                <div class="hp text-center"  :style="{
-                    width: monsterHp/3 + '%'
-                }">
+                <div class="hp text-center" :style="{width: monsterHp/3 + '%'}">
                 </div>
                 {{ monsterHp }}
             </div>
@@ -114,6 +108,7 @@
                     }else{
                         this.isRunning =false;
                     }
+
                     return true;
                 } else if(this.monsterHp <= 0){
                     if(confirm("You ! Do you want to start new game ?")){
@@ -121,8 +116,10 @@
                     }else{
                        this.isRunning =false;
                     }
+
                     return true;
                 }
+
                 return false;
             },
 
@@ -155,41 +152,48 @@
 
 <style>
     .col-md-4 {
-    text-align: center;
-    background: white;
-    height: 420px;
-    margin-top: 50px;
+        text-align: center;
+        background: white;
+        height: 420px;
+        margin-top: 50px;
     }
+    
     .pull{
         display: inline;
     }
+
     .select {
-    margin-top: 50px;
-    background: white;
-    height: 100px;
-    width: 66.666666%;
-    margin: auto;
-    border: 1px solid whitesmoke;
+        margin-top: 50px;
+        background: white;
+        height: 100px;
+        width: 66.666666%;
+        margin: auto;
+        border: 1px solid whitesmoke;
     }
+
     .option{
         margin-top: 20px;
         text-align: center;
     }
+
     .hp .text-center {
-    width: 300px;
-    height: 40px;
-    text-align: center;
-    background-color: Red;
-    margin: 0;
+        width: 300px;
+        height: 40px;
+        text-align: center;
+        background-color: Red;
+        margin: 0;
     }
+
     .hp {
-    text-align: left;
-    margin: auto;
-    width: 280px;
+        text-align: left;
+        margin: auto;
+        width: 280px;
     }
+
     #stop{
         width:100px;
     }
+
     #back{
         text-decoration: none;
     }

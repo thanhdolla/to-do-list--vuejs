@@ -71,20 +71,20 @@
                 let listDo = this.tasks;
                 this.$store.dispatch('addList', listDo);
                 console.log(listDo);
-                // this.$store.dispatch('addList', listDo);
             }
         },
     }
-
 </script>
 
 <style>
     .form{
         display: inline;
     }
+
     .btn{
         height:38px;
     }
+
     #card {
         position: relative;
         background: white;
@@ -95,19 +95,22 @@
         border-radius: 7%;
         float:left;
     }
+
     #list {
-    position: absolute;
-    bottom: 10px;
-    width: 90%;
-    height: 94%;
-    margin-left: 5%;
+        position: absolute;
+        bottom: 10px;
+        width: 90%;
+        height: 94%;
+        margin-left: 5%;
     }
+
     #add-row input {
-    box-shadow: rgb(12, 102, 175);
-    width: 300px;
-    bottom: 10px;
-    margin-left: 20px;
+        box-shadow: rgb(12, 102, 175);
+        width: 300px;
+        bottom: 10px;
+        margin-left: 20px;
     }
+
     li button{
         /* font-size: px; */
         font-weight: bold;
@@ -116,6 +119,7 @@
         background: white;
         float:right;
     }
+
     li{
         height:48px;
         width:500px
@@ -124,7 +128,6 @@
     h3{
         margin-top: 20px;
         text-emphasis: center;
-    
     }
 </style>
 

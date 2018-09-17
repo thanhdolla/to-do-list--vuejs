@@ -59,6 +59,7 @@
         background: rgb(247, 126, 14);
         height: 100px;
     }
+    
     .game{
         width:150px;
         height:100px;
@@ -68,13 +69,16 @@
         position:absolute;
         text-align: center;
     }
+
     .wrap{
         width: 100%;
         margin: 0 auto;
     }
+
     #link-game{
         text-decoration: none;
     }
+
     a{
         color:white;
         font-size: 20px;
